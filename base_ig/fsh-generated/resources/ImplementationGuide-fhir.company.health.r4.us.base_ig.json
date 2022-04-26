@@ -1,0 +1,95 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.company.health.r4.us.base_ig",
+  "url": "https://fhir.company.health/r4/us/base_ig/ImplementationGuide/fhir.company.health.r4.us.base_ig",
+  "version": "0.1.0",
+  "name": "base_igus",
+  "title": "Base",
+  "status": "draft",
+  "contact": [
+    {
+      "name": "Google",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.company.com"
+        }
+      ]
+    }
+  ],
+  "description": "Base",
+  "packageId": "fhir.company.health.r4.us.base_ig",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.0",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/base-patient"
+        },
+        "name": "Clinical Patient",
+        "description": "A patient that with information needed for Clinical Tools.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

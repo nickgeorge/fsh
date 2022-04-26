@@ -1,0 +1,25 @@
+id: fhir.company.health.r4.us.carestudio
+canonical: https://fhir.company.health/r4/us/carestudio
+version: 0.1.0
+name: sub_ig-us
+title: Sub
+status: draft
+publisher: Google
+contact:
+  - name: Google
+    telecom:
+      - system: url
+        value: https://www.company.com
+description: Sub
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+copyrightYear: 2022+
+releaseLabel: ci-build
+dependencies:
+  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.us.core: 3.1.0
+  fhir.company.health.r4.us.base_ig: dev

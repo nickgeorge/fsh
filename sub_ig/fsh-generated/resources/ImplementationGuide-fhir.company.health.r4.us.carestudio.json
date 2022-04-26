@@ -1,0 +1,86 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.company.health.r4.us.carestudio",
+  "url": "https://fhir.company.health/r4/us/carestudio/ImplementationGuide/fhir.company.health.r4.us.carestudio",
+  "version": "0.1.0",
+  "name": "sub_igus",
+  "title": "Sub",
+  "status": "draft",
+  "contact": [
+    {
+      "name": "Google",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.company.com"
+        }
+      ]
+    }
+  ],
+  "description": "Sub",
+  "packageId": "fhir.company.health.r4.us.carestudio",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.0",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
+    },
+    {
+      "packageId": "fhir.company.health.r4.us.base_ig",
+      "version": "dev",
+      "uri": "https://fhir.company.health/r4/us/base_ig",
+      "id": "fhir_company_health_r4_us_base_ig"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/sub-patient"
+        },
+        "name": "Sub Patient",
+        "description": "Sub Patient",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

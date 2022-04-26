@@ -1,0 +1,35 @@
+id: fhir.company.health.r4.us.base_ig
+canonical: https://fhir.company.health/r4/us/base_ig
+version: 0.1.0
+name: base_ig-us
+title: Base
+status: draft
+publisher: Google
+contact:
+  - name: Google
+    telecom:
+      - system: url
+        value: https://www.company.com
+description: Base
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+copyrightYear: 2022+
+releaseLabel: ci-build
+dependencies:
+  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.us.core: 3.1.0
+# TODO (gabbye): Determine if we need to support different US Core verisons in different profiles,
+# If so, need to identify a way to define version within the profile
+
+# menu:
+#   IG Home: index.html
+#   Table of Contents: toc.html
+#   Artifacts Summary: artifacts.html
+#   Guidance: guidance.html
+#   Examples: examples.html
+#   Downloads: downloads.html
+

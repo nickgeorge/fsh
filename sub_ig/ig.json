@@ -1,0 +1,63 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "my.sub_ig",
+  "url": "http://fhir.company.health/r4/us/sub_ig",
+  "name": "sub-ig",
+  "title": "Sub",
+  "status": "draft",
+  "packageId": "fhir.company.health.r4.us.sub_ig",
+  "version": "0.1",
+  "fhirVersion": ["4.0.1"],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.company.com"
+        }
+      ]
+    }
+  ],
+  "definition": {
+    "parameter": [
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      }
+    ],
+    "page":
+      {
+        "nameUrl": "toc.html",
+        "title": "Table of Contents",
+        "generation": "html",
+        "page": [
+          {
+            "nameUrl": "index.html",
+            "title": "US CareStudio Implementation Guide",
+            "generation": "markdown"
+          },
+          {
+            "nameUrl": "artifacts.html",
+            "title": "Artifacts",
+            "generation": "html"
+          },
+        ]
+      }
+  },
+  "dependsOn": [
+    {
+      "uri" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "version" : "3.1.0"
+    },
+    {
+      "uri" : "https://fhir.company.health/r4/us/base_ig",
+      "packageId": "fhir.company.health.r4.us.base_ig",
+      "version" : "0.1"
+    }
+  ]
+}
